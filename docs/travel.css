@@ -1,0 +1,25 @@
+table{
+    width: 50%;
+    height: 200;
+}
+ th, td {
+    border: 1px solid black ;
+  }
+  section{
+    border: 1px black dashed ;  
+    
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.color{
+    background: olive;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+    <link rel="stylesheet" type="text/css" href="travel.css">
+</head>
+
+<body>
+    <div>
+        <div class="flex allTraveles">
+            <table id="travellist" class="color">
+                <thead>
+                    <tr>
+                        <th>Travel code</th>
+                        <th>Travel name</th>
+                        <th> Travel price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="order-travel, color">
+                <label for="name">Name: </label>
+                <input id="name">
+                <br>
+                <label for="pi">Personal ID: </label>
+                <input id="pi">
+                <br>
+                <label for="ti">Travel ID</label>
+                <input id="ti">
+                <br>
+                <label for="pas">Passengers: </label>
+                <input id="pas">
+                <br>
+                <button id="send" onclick="orders()">Send</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div>
+        <div class="flex orders">
+            <table id="costumerList" class="color">
+                <thead>
+                    <tr>
+                        <th>
+                            Total
+                        </th>
+                        <th>
+                            Passengers
+                        </th>
+                        <th>
+                            Travel Name
+                        </th>
+                        <th>
+                            Personal ID
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Travel ID
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="search-name, color">
+                <label for="findName"> name: </label>
+                <input id="findName">
+                <button id="find" onclick="finedCostumer()">Find</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="flexr">
+           <table id="myOrders" class="color">
+               <thead>
+                    <tr>
+                            <th>
+                                Total
+                            </th>
+                            <th>
+                                Passengers
+                            </th>
+                            <th>
+                                Travel Name
+                            </th>
+                            <th>
+                                Personal ID
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Travel ID
+                            </th>
+                        </tr>
+               </thead>
+           </table>
+        </div>
+        <div class="flexr">
+                <table id="mySerches" class="color">
+                    <thead>
+                         <tr>
+                             <select  id="place" onchange="searchPlace()">
+                                 <option value="choose" selected>Choose destination</option>
+                                 <option value="England">England</option>
+                                 <option value="America">America</option>
+                                 <option value="Spain">Spain</option>
+                                 <option value="Ciperus">Ciperus</option>
+                             </select>
+                                 <th>
+                                     Total
+                                 </th>
+                                 <th>
+                                     Passengers
+                                 </th>
+                                 <th>
+                                     Travel Name
+                                 </th>
+                                 <th>
+                                     Personal ID
+                                 </th>
+                                 <th>
+                                     Name
+                                 </th>
+                                 <th>
+                                     Travel ID
+                                 </th>
+                             </tr>
+                    </thead>
+                </table>
+             </div>
+    </div>
+    <script src="travel.js"></script>
+</body>
+
+</html>
